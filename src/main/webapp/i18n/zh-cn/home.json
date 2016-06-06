@@ -1,0 +1,8 @@
+{
+    "home": {
+        "subtitle": "这里是首页",
+        "logged": {
+            "message": "您目前是以 \"{{username}}\" 账号登录."
+        }
+    }
+}

@@ -1,0 +1,65 @@
+<div ng-cloak>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-responsive img-rounded" src="content/images/miku.jpg">
+        </div>
+        <div class="col-md-8">
+            <h1>张仲昊的J2EE课程结项项目</h1>
+            <p class="lead" translate="home.subtitle">This is your homepage</p>
+
+            <div ng-switch="vm.isAuthenticated()">
+                <div class="alert alert-success" ng-switch-when="true" translate="home.logged.message" translate-values="{username: '{{vm.account.login}}'}">
+                    You are logged in as user "{{vm.account.login}}".
+                </div>
+
+                <div class="alert alert-warning" ng-switch-when="false" t>
+                    如果你想 <a class="alert-link" href="" ng-click="vm.login()">登录</a>, 那么你一定觉得我会告诉你密码<br/>但是我肯定不会给你密码～ <br/>还是给一个普通帐号的密码吧。。 (用户名="user" 以及 密码="user").
+                </div>
+
+                <div class="alert alert-warning" ng-switch-when="false" translate="global.messages.info.register" translate-compile>
+                    You don't have an account yet? <a class="alert-link" ui-sref="register">Register a new account</a>
+                </div>
+            </div>
+            <div>
+
+            <div class = "jumbotron">
+              <div id = "innerOne">
+                <h3>o(￣ヘ￣o＃) 欢迎来到我课程结项项目！</h3>
+                <h3>下面首先我来介绍一下自己吧~</h3>
+                </br>
+                <h4>如果你已做好充分准备的话就请继续看下去吧</h4>
+                <div id = "readMoreBtnDiv">
+                  <button type="button" class="btn btn-blue" id = "readMoreBtn">了解更多</button>
+                </div>
+              </div>
+              <div id = "innerTwo">
+                <h5>－－－－－个人基本信息－－－－－</h5>
+                <h4>姓名：张仲昊</h4>
+                <h4>学校&&学院&&系：华中师范大学计算机学院软件工程系</h4>
+                <h4>出生年月：96年2月</h4>
+                <h4>个人爱好：宅、Dota2、OSU、柴犬、Coding</h4>
+                <h4>人生信条：做人开心就好</h4>
+                </br>
+                <h5>－－－－－联系方式&&社交网络－－－－－</h5>
+                </br>
+                <h4>Email：<a href="sakuranekoq@gmail.com">SakuraNeko@gmai.com</a></h4>
+                <h4>Github：<a href="https://github.com/Eqistyre">SakuraNeko的Gihub</a></h4>
+                <h4>Blog：<a href="http://eqistyre.github.io">SakuraNeko的博客</a></h4>
+                </br>
+
+                <h5>－－－－－一些做过的小项目－－－－－</h5>
+                <h4>似乎做过很多虎头蛇尾小项目，这里就放一个吧</h4>
+                <h4><a href="http://www.sakuraneko.me:3000/findYourLover">CCNU_Echarts</a></h4>
+                </br>
+              </div>
+            </div>
+
+            <p>
+             <span>强烈推荐使用本次项目所使用的项目生成器——JHipster</span>&nbsp;<a href="https://github.com/jhipster/generator-jhipster" target="_blank">Jhipster</a>!
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- build js for home.html -->
+<script src="app/home/slide.js"></script>
